@@ -25,13 +25,21 @@ For more details please see this [link](https://docs.microsoft.com/en-us/azure/m
 After cloning the repo, change the variables in the `config/settings.py` using the following configuration:
 
 `WORKSPACE_NAME`: Your Azure ML Workspace
+
 `WORKSPACE_LOCATION`: The location of your Azure ML Workspace
+
 `RESOURCE_GROUP`: Your Resource Group
+
 `SUBSCRIPTION_ID`: Your Subscription_Id
+
 `TENANT_ID`: Your Tenant Id
+
 `SERVICE_PRINCIPAL_ID`: Your client-id
+
 `SERVICE_PRINCIPAL_PASSWORD`: Your client-secret
+
 `MODEL_NAME`: The model name registered in your Azure ML Workspace
+
 `ENDPOINT_NAME`: The local endpoint name to be generated after the deployment
 
 In this example we will use a `Service Principal` to be able to authenticate on Azure (to get the model). Please check this [link](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-setup-authentication#service-principal-authentication) to see more details about this process. You will set the variables `TENANT_ID`, `SERVICE_PRINCIPAL_ID` and `SERVICE_PRINCIPAL_PASSWORD` with values collected from your service principal.
